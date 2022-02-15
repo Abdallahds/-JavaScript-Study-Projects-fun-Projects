@@ -1,0 +1,48 @@
+.todo {
+    height: 100vh;
+    background-image: linear-gradient(to right, #ff81032f, #ff81037e), url("Images/wadirum2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media (max-width:1225px) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.582);
+        width: 350px;
+        height: 400px;
+        text-align: center;
+
+        i {
+            color: $color-1;
+            font-size: 35px;
+            margin: 40px 0;
+        }
+
+        h1 {
+            color: rgb(59, 59, 59);
+        }
+
+        p {
+            margin: 50px 0 0 20px;
+            text-align: left;
+            width: 90%;
+        }
+
+        @media (max-width:1407px) {
+            width: 300px;
+        }
+    }
+    .card1{
+        @media (max-width:1225px) {
+            display: none;
+        }
+    }
+}

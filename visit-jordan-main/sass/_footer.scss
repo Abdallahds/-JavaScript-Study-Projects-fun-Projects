@@ -1,0 +1,48 @@
+@import "variables";
+footer{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(to bottom right , #333,#222);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    h1{
+        @media (max-width:600px) {
+            font-size: 20px;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            margin: 15px;
+            a{
+                text-decoration: none;
+                font-size: 50px;
+                @media (max-width:600px) {
+                    font-size: 30px;
+                }
+                color: #fff;
+                &:hover{
+                    transition: all .3s;
+                }
+            }
+            .linkedin{
+                &:hover{
+                    color:rgb(51, 51, 223);
+                }
+            }
+            .website{
+                &:hover{
+                    color:$color-1;
+                }
+            }
+            .github{
+                &:hover{
+                    color:#000;
+                }
+            }
+        }
+    }
+}

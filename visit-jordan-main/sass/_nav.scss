@@ -1,0 +1,23 @@
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 200;
+    margin: 75px;
+    color: #fff;
+    
+    .ham{
+        margin-right: 200px;
+        background-color: $color-1;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        @media (max-width:930px) {
+            margin-right: 120px;
+        }
+        p{
+            margin: 20px 10px;
+        }
+    }
+}
